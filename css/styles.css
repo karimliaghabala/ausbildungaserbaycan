@@ -43,10 +43,7 @@ nav ul li a{
 }
 nav>ul>li>a{
     padding: 10px;
-   font-size: 12px;
+   font-size: 10px;
 }
-nav>ul>li>.erste{
-    font-size: 10px;
-    padding: 7px;
-}
+
 }
