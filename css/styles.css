@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: a;
+}
+.displayFlex{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    margin: 24px;
+}
+.photoHeader{
+    width: 100%;
+    height: 300px;
+}
+.photoHeader>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and ( min-width:800px){
+.photoHeader {
+    height: 600px;
+}
+}
+
+nav>ul{
+    list-style:none;
+
+}
+nav ul li a{
+    padding: 24px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
