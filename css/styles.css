@@ -45,4 +45,8 @@ nav>ul>li>a{
     padding: 10px;
    font-size: 12px;
 }
+nav>ul>li>.erste{
+    font-size: 10px;
+    padding: 7px;
+}
 }
