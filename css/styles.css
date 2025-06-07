@@ -38,9 +38,7 @@ nav ul li a{
 
 
 @media screen and ( max-width:800px){
-.photoHeader {
-    height: 400px;
-}
+
 nav>ul>li>a{
     padding: 10px;
    font-size: 10px;
