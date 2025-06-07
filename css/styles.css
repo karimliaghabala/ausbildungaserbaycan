@@ -20,11 +20,7 @@ header{
     height: 100%;
     object-fit: cover;
 }
-@media screen and ( min-width:800px){
-.photoHeader {
-    height: 600px;
-}
-}
+
 
 nav>ul{
     list-style:none;
@@ -35,4 +31,18 @@ nav ul li a{
     text-decoration: none;
     color: black;
     font-weight: 600;
+}
+
+
+
+
+
+@media screen and ( max-width:800px){
+.photoHeader {
+    height: 400px;
+}
+nav>ul>li>a{
+    padding: 10px;
+   font-size: 12px;
+}
 }
