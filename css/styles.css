@@ -37,7 +37,7 @@ nav ul li a{
     font-weight: 600;
 }
 .backgroundNav, footer{
-    background: linear-gradient(45deg, #000000, #ff0808, #eeff02);
+    background: linear-gradient(45deg, #000000, #c95b5b, #eeff02);
     box-shadow: 0 0 10px rgba(68, 47, 2, 0.5);
     border-radius: 10px;
 }
