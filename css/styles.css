@@ -45,8 +45,11 @@ footer{
     padding: 1px;
     text-align: center;
     color: rgb(255, 233, 232);
+    margin-top: 10px;
 }
-
+a{
+    text-decoration: none;
+}
 
 
 
