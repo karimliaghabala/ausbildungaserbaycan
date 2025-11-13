@@ -66,5 +66,8 @@ nav>ul>li>a{
    font-size: 10px;
    text-align: center;
 }
+.qr{
+    width: 100%;
+}
 
 }
