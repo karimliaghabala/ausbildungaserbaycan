@@ -1,0 +1,141 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+  padding: 25px;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* MAIN CONTAINER */
+.content-box {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-left: 8px solid #c95b5b;
+  transition: 0.3s ease;
+}
+
+.content-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.22);
+}
+
+/* TITLES */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 34px;
+  color: #c95b5b;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+h2 {
+  font-size: 22px;
+  color: #555;
+}
+
+h3 {
+  font-size: 19px;
+  color: #777;
+}
+
+/* AUDIO PLAYER */
+audio {
+  width: 100%;
+  margin: 18px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* QUESTION BLOCKS */
+.question {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+}
+
+.question:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.question p {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+/* BACK BUTTON */
+.back-btn a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: linear-gradient(45deg, #c95b5b, #ff8a8a);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.back-btn a:hover {
+  background: linear-gradient(45deg, #a94444, #ff6b6b);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ANALYTICS TEXT */
+p {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 16px;
+  color: #444;
+}
+
+#licnt92A4 {
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 { font-size: 28px; }
+  h2 { font-size: 18px; }
+
+  .content-box {
+    padding: 20px;
+  }
+
+  .question {
+    padding: 14px;
+  }
+
+  .back-btn a {
+    width: 100%;
+    text-align: center;
+  }
+}

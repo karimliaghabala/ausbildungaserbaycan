@@ -1,48 +1,46 @@
-    .magic-button {
-      padding: 5px 8px;
-      margin: 2px;
-      background: linear-gradient(45deg, #000000, #c95b5b, #eeff02);
-      color: white;
-      font-size: 18px;
-      border: none;
-      border-radius: 10px 0 10px 0;
-      cursor: pointer;
-      transition: 0.3s;
-      box-shadow: 0 0 10px rgba(68, 47, 2, 0.5);
-      position: relative;
-      overflow: hidden;
-      text-align: center;
-      width: 50%;
-    }
-    
-
-    .magic-button::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, transparent 70%);
-      transform: rotate(45deg);
-      transition: 0.5s;
-    }
-
-    .magic-button:hover {
-      box-shadow: 0 0 20px rgba(235, 213, 114, 0.7), 0 0 40px rgba(248, 191, 138, 0.7);
-      transform: scale(1.05);
-    }
-
-    .magic-button:hover::before {
-      top: -20%;
-      left: -20%;
-    }
-
-
-    @media screen and ( max-width:800px){
-.magic-button{
-    padding:10px;
-   font-size: 10px;
+.magic-button {
+  padding: 5px 8px;
+  margin: 2px;
+  background: linear-gradient(45deg, #000000, #c95b5b, #eeff02);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px 0 10px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(68, 47, 2, 0.5);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 50%;
 }
 
+.magic-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 70%);
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+
+.magic-button:hover {
+  box-shadow: 0 0 20px rgba(235, 213, 114, 0.7),
+              0 0 40px rgba(248, 191, 138, 0.7);
+  transform: scale(1.05);
+}
+
+.magic-button:hover::before {
+  top: -20%;
+  left: -20%;
+}
+
+@media screen and (max-width: 800px) {
+  .magic-button {
+    padding: 10px;
+    font-size: 10px;
+  }
 }
