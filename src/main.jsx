@@ -79,6 +79,97 @@ const audioSources = {
     { label: '50-66', src: '/interv-vor/vorstellug/50-66.mp3' },
   ],
 };
+
+const kochTexts = [
+  { title: 'Interesse an der Ausbildung', question: 'Warum interessieren Sie sich für eine Ausbildung zum Koch?', answer: 'Ein Studium in Deutschland bietet die Möglichkeit, verschiedene kulinarische Stile kennenzulernen und kann meine Karriere abwechslungsreicher gestalten.' },
+  { title: 'Erfahrungen in der Gastronomie', question: 'Haben Sie bereits Erfahrungen in der Gastronomie gesammelt? Wenn ja, welche?', answer: 'Im Restaurant „Anadolu“ lernte ich die türkische Küche kennen. Ich kann Manti, Döner, Sarma kochen. Im Restaurant „Astoria“ und in Ihrem Café wurde aserbaidschanische Küche bevorzugt. Gerichte: Dolma, Plov, usbekisches Plovu, gegrillte Kebabs, Salate: Capital-Salat, Memosa-Salat, Hirtensalat.' },
+  { title: 'Wichtige Eigenschaften eines guten Kochs', question: 'Was sind Ihrer Meinung nach wichtige Eigenschaften, die ein guter Koch haben sollte?', answer: 'Er sollte sich ständig weiterentwickeln, auf maximale Sauberkeit achten und vor allem geduldig sein.' },
+  { title: 'Kochfähigkeiten und Lieblingsgerichte', question: 'Können Sie uns etwas über Ihre Kochfähigkeiten und Ihre Lieblingsgerichte erzählen?', answer: 'Ich kann verschiedene traditionelle Gerichte zubereiten und achte bei jeder Zubereitung auf Geschmack, Qualität und saubere Küche.' },
+  { title: 'Umgang mit stressigen Situationen', question: 'Wie gehen Sie mit stressigen Situationen in der Küche um?', answer: 'Wenn ich mich über etwas ärgere, kann ich meine Nerven nur in der Küche beruhigen.' },
+  { title: 'Kenntnisse über Lebensmittelhygiene und -sicherheit', question: 'Haben Sie Kenntnisse über Lebensmittelhygiene und -sicherheit?', answer: 'Ja, ich achte auf Hygiene, sichere Lagerung und saubere Arbeitsabläufe in der Küche.' },
+  { title: 'Bewerbung und Unternehmenswahl', question: 'Warum haben Sie sich gerade für unser Unternehmen beworben?', answer: 'Ich möchte in einem professionellen Umfeld lernen, meine Kochfähigkeiten verbessern und langfristig in meinem Beruf weiterwachsen.' },
+];
+
+const vorstellungTexts = [
+  { q: 'Wie geht es Ihnen?', a: 'Mir geht es gut, danke.' },
+  { q: 'Wie war Ihr Fahrt?', a: 'Die Fahrt war gut.' },
+  { q: 'Wie lange waren Sie unterwegs, um hierher zu kommen?', a: 'Ich war etwa zwei Stunden unterwegs.' },
+  { q: 'Wie ist das Wetter heute?', a: 'Das Wetter ist heute sonnig.' },
+  { q: 'Wie heißen Sie?', a: 'Ich heiße Aghabala.' },
+  { q: 'Wie ist Ihr Vorname?', a: 'Mein Vorname ist Aghabala.' },
+  { q: 'Wie ist Ihr Nachname?', a: 'Mein Nachname ist Kerimli.' },
+  { q: 'Wann sind Sie geboren?', a: 'Ich bin am 03.03.1993 geboren.' },
+  { q: 'Wo sind Sie geboren?', a: 'Ich bin in Baku geboren.' },
+  { q: 'Wo wohnen Sie?', a: 'Ich wohne in Baku.' },
+  { q: 'Wohnen Sie mit ihren Eltern zusammen?', a: 'Nein, ich wohne nicht mit meinen Eltern zusammen.' },
+  { q: 'Haben Sie Geschwister?', a: 'Ja, ich habe Geschwister.' },
+  { q: 'Haben Sie Familie?', a: 'Ja, ich habe eine Familie.' },
+  { q: 'Können Sie ihre Familie vorstellen?', a: 'Meine Familie besteht aus meiner Frau und meinen zwei Kindern.' },
+  { q: 'Was ist Ihr Familienstand?', a: 'Ich bin verheiratet.' },
+  { q: 'Sind Sie verheiratet?', a: 'Ja, ich bin verheiratet.' },
+  { q: 'Seit wann sind Sie verheiratet?', a: 'Ich bin seit 2015 verheiratet.' },
+  { q: 'Haben Sie Kinder?', a: 'Ja, ich habe Kinder.' },
+  { q: 'Wann haben Sie die Schule abgeschlossen?', a: 'Ich habe die Schule 2011 abgeschlossen.' },
+  { q: 'Arbeiten Sie momentan?', a: 'Ja, ich arbeite momentan.' },
+  { q: 'Wo arbeiten Sie?', a: 'Ich arbeite in einer Bäckerei.' },
+  { q: 'Welche Sprachen sprechen Sie?', a: 'Ich spreche Aserbaidschanisch, Russisch und ein wenig Deutsch.' },
+  { q: 'Verstehen Sie Deutsch?', a: 'Ja, ich verstehe Deutsch.' },
+  { q: 'Seit wann lernen Sie Deutsch?', a: 'Ich lerne Deutsch seit einem Jahr.' },
+  { q: 'Wo haben Sie Deutsch gelernt?', a: 'Ich habe Deutsch in Sprachkursen gelernt.' },
+  { q: 'Warum wollen Sie nach Deutschland fliegen?', a: 'Ich möchte in Deutschland arbeiten und meine Karriere fortsetzen.' },
+  { q: 'Wann möchten Sie nach Deutschland fliegen?', a: 'Ich möchte nächsten Monat nach Deutschland fliegen.' },
+  { q: 'Wann fängt Ihre Ausbildung an?', a: 'Meine Ausbildung beginnt im August.' },
+  { q: 'Wie lange dauert Ihre Ausbildung?', a: 'Meine Ausbildung dauert drei Jahre.' },
+  { q: 'Als welcher Beruf werden Sie in Deutschland arbeiten?', a: 'Ich werde als Bäcker in Deutschland arbeiten.' },
+  { q: 'Warum wollen Sie diesen Beruf in Deutschland lernen?', a: 'Ich möchte meine Fähigkeiten verbessern und neue Erfahrungen sammeln.' },
+  { q: 'Haben Sie schon Erfahrungen mit diesem Beruf?', a: 'Ja, ich habe Erfahrungen als Bäcker.' },
+  { q: 'Wo haben Sie den Ausbildungsplatz gefunden?', a: 'Ich habe den Ausbildungsplatz online gefunden.' },
+  { q: 'Über welche Seite haben Sie ihn gefunden?', a: 'Über eine Job-Website.' },
+  { q: 'Welche Pläne haben Sie nach der Ausbildung?', a: 'Nach der Ausbildung möchte ich in Deutschland arbeiten.' },
+  { q: 'Wie lange wollen Sie in Deutschland bleiben?', a: 'Ich plane, für mindestens fünf Jahre in Deutschland zu bleiben.' },
+  { q: 'Werden Sie in Ihr Land zurückkommen?', a: 'Ja, ich plane, in mein Land zurückzukehren.' },
+  { q: 'Waren Sie schon einmal in Deutschland?', a: 'Nein, ich war noch nie in Deutschland.' },
+  { q: 'Fliegen Sie zum ersten Mal nach Deutschland?', a: 'Ja, ich fliege zum ersten Mal nach Deutschland.' },
+  { q: 'Möchten Sie Ihre Familie nach Deutschland mitnehmen?', a: 'Vielleicht, aber später.' },
+  { q: 'In welcher Stadt werden Sie eine Ausbildung machen?', a: 'In Berlin werde ich eine Ausbildung machen.' },
+  { q: 'In welcher Stadt werden Sie bleiben?', a: 'Ich werde in Berlin bleiben.' },
+  { q: 'Wollen Sie in Deutschland alleine wohnen?', a: 'Ja, ich werde in Deutschland alleine wohnen.' },
+  { q: 'Haben Sie eine Wohnung gefunden?', a: 'Nein, ich habe noch keine Wohnung gefunden.' },
+  { q: 'Haben Sie Verwandte in Deutschland?', a: 'Nein, ich habe keine Verwandten in Deutschland.' },
+  { q: 'Haben Sie Freunde in Deutschland?', a: 'Nein, ich habe keine Freunde in Deutschland.' },
+  { q: 'Haben Sie Bekannte in Deutschland?', a: 'Ja, ich habe Bekannte in Deutschland.' },
+  { q: 'Haben Sie Haustiere?', a: 'Nein, ich habe keine Haustiere.' },
+  { q: 'Welche Tiere mögen Sie?', a: 'Ich mag Hunde.' },
+  { q: 'Was ist Ihre Lieblingsjahreszeit?', a: 'Meine Lieblingsjahreszeit ist der Frühling.' },
+  { q: 'Was ist Ihr Lieblingsessen?', a: 'Mein Lieblingsessen ist Pide.' },
+  { q: 'Was ist Ihre Lieblingsfarbe?', a: 'Meine Lieblingsfarbe ist Blau.' },
+  { q: 'Welche Farbe gefällt Ihnen am besten?', a: 'Ich mag Blau am besten.' },
+  { q: 'Was machen Sie an Ihren freien Tagen?', a: 'An meinen freien Tagen entspanne ich mich und verbringe Zeit mit meiner Familie.' },
+  { q: 'Was machen Sie in Ihrer Freizeit?', a: 'In meiner Freizeit lese ich und gehe spazieren.' },
+  { q: 'Was sind Ihre Hobbys?', a: 'Meine Hobbys sind Lesen und Kochen.' },
+  { q: 'Was ist Ihr Lieblingsfilm?', a: 'Mein Lieblingsfilm ist "Inception".' },
+  { q: 'Was ist Ihr Lieblingsbuch?', a: 'Mein Lieblingsbuch ist "1984" von George Orwell.' },
+  { q: 'Können Sie ein Musikinstrument spielen?', a: 'Nein, ich kann kein Musikinstrument spielen.' },
+  { q: 'Was ist Ihr Lieblingssport?', a: 'Mein Lieblingssport ist Fußball.' },
+  { q: 'Was ist die Hauptstadt von Deutschland?', a: 'Die Hauptstadt von Deutschland ist Berlin.' },
+  { q: 'Welche Stadt ist die Hauptstadt Deutschlands?', a: 'Berlin ist die Hauptstadt von Deutschland.' },
+  { q: 'Welche Sprache spricht man in Deutschland?', a: 'In Deutschland spricht man Deutsch.' },
+  { q: 'Welche Farbe hat die Flagge von Deutschland?', a: 'Die Flagge von Deutschland hat die Farben Schwarz, Rot und Gold.' },
+  { q: 'Was würden Sie nach dem Gespräch machen?', a: 'Nach dem Gespräch werde ich nach Hause gehen und mich entspannen.' },
+];
+
+const interviewTextBySlug = {
+  koch: kochTexts,
+  vorstellug: vorstellungTexts,
+  'vorstellug 1': vorstellungTexts.slice(0, 15),
+  'vorstellug 2': vorstellungTexts.slice(15, 30),
+  'vorstellug 3': vorstellungTexts.slice(30, 50),
+  'vorstellug 4': vorstellungTexts.slice(50, 66),
+  'vorstellug 5': vorstellungTexts.slice(0, 12),
+  'vorstellug 6': vorstellungTexts.slice(12, 30),
+  'vorstellug 7': vorstellungTexts.slice(30, 66),
+};
+
 const blogItems = [['Ailə birləşməsi', '/blog/textaile'], ['Almaniyada banklara qeydiyyat', '/blog/textbank'], ['Uşaqların məktəbə və bağçaya qeydiyyatı', '/blog/kitaundschule'], ['Almaniyada kirayə ev tapmaq problemi (YENİ)', '/blog/mietevohnung']];
 
 function Link({ href, children, className = '' }) {
@@ -112,13 +203,15 @@ function Contact() { return <><h1 className="text-3xl font-bold">Əlaqə</h1><p>
 function Detail({ type, slug }) {
   const items = type === 'blog' ? blogItems : interviewItems;
   const normalizedSlug = decodeURIComponent(slug || '').trim();
+  const slugKey = normalizedSlug.replace(/\s+/g, ' ');
   const title = items.find(([, href]) => href.endsWith(normalizedSlug) || href.endsWith(normalizedSlug.replace(/\s+/g, '-')))?.[0] || 'Məlumat';
 
   if (type === 'blog') {
     return <><h1 className="text-3xl font-bold">{title}</h1><p>Bu bölmədə Almaniyada yaşayış və gündəlik həyatla bağlı faydalı məlumatlar paylaşılır.</p></>;
   }
 
-  const sources = audioSources[normalizedSlug] || audioSources[normalizedSlug.replace(/\s+/g, '-')] || audioSources.vorstellug;
+  const sources = audioSources[slugKey] || audioSources.vorstellug;
+  const textBlocks = interviewTextBySlug[slugKey] || interviewTextBySlug.vorstellug;
 
   return <>
     <h1 className="text-3xl font-bold">{title}</h1>
@@ -130,6 +223,26 @@ function Detail({ type, slug }) {
           <audio className="w-full max-w-lg" controls src={src}>Audio dəstəklənmir.</audio>
         </div>
       ))}
+    </div>
+    <div className="mt-6 space-y-5 rounded-xl bg-stone-50 p-4">
+      {slugKey === 'koch' ? (
+        kochTexts.map((section) => (
+          <div key={section.title} className="rounded-lg border border-stone-200 bg-white p-3">
+            <h2 className="mb-2 text-xl font-semibold text-red-700">{section.title}</h2>
+            <p className="mb-2"><strong>Suallar:</strong> {section.question}</p>
+            <p><strong>Cavab:</strong> {section.answer}</p>
+          </div>
+        ))
+      ) : (
+        <div className="space-y-3">
+          {textBlocks.map((item, index) => (
+            <div key={`${slugKey}-${index}`} className="rounded-lg border border-stone-200 bg-white p-3">
+              <p><strong>{index + 1}.</strong> {item.q}</p>
+              <p className="mt-1 text-stone-700"><strong>Cavab:</strong> {item.a}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   </>;
 }
