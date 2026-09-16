@@ -6,6 +6,9 @@
     <title>Redirecting...</title>
     <script>
       (() => {
+        if (window.location.search.includes('route=')) {
+          return;
+        }
         const currentPath = window.location.pathname + window.location.search + window.location.hash;
         const repoPrefix = '/ausbildungaserbaycan';
         const normalized = currentPath.startsWith(repoPrefix) ? currentPath.slice(repoPrefix.length) || '/' : currentPath;

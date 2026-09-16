@@ -284,23 +284,89 @@ const interviewSections = {
 
 const blogItems = [['Ailə birləşməsi', '/blog/textaile'], ['Almaniyada banklara qeydiyyat', '/blog/textbank'], ['Uşaqların məktəbə və bağçaya qeydiyyatı', '/blog/kitaundschule'], ['Almaniyada kirayə ev tapmaq problemi (YENİ)', '/blog/mietevohnung']];
 
+const blogArticles = {
+  textaile: {
+    title: 'Ailə birləşməsi',
+    paragraphs: [
+      'Salam hörmətli oxuyucular. Mən Kərimli Ağabala. İlk öncə Almaniya arzusunda olanların hər birinə Almaniyada yaşamağı arzu edirəm.',
+      'Bu hal yalnız ərin Almaniyada Ausbildung olduğu halda həyat yoldaşının Ausbildung yolu ilə gəlib uşaqlarını gətirməsi halına aiddir. Bir çox sənədləşmə işləri eynidir.',
+      'İlk öncə Nigah haqqında şəhadətnamə, uşaqların doğum haqqında şəhadətnamələrini 5 saylı ASAN xidmətdə andlı tərcümə etdirməlisiniz. Bu proses 20 gün müddətdə həll olur. Sənədləri ər və arvadın hər hansı biri təqdim edir.',
+      'Sənədləri daha sonra Xarici İşlər Nazirliyində təsdiq etdirmək lazımdır. Bunu validenlərdən biri 5 saylı ASAN xidmətdə təqdim edir. 1 həftədən sonra sənədlər hazır olur.',
+      'Sonra Konsulluğa təqdim etmək üçün rəsmi internet səhifəsindən görüş vaxtı götürürsünüz və sənədləri təqdim edirsiniz. Bu zaman hər sənədə 56 manat ödəniş edilir.',
+      'Ailə birləşməsi üçün müraciət etdikdən sonra səfirliyin elektron poçtuna məktub yazmaq, sənədlərin harada olduğunu öyrənmək faydalı olur. Müraciət etdikdən 1-2 gün sonra cavab gəlib, sənədlər miqrasiya idarəsinə göndərilmiş olur.',
+      'Əgər Berlinə gəlirsinizsə, miqrasiya idarəsinin mail vasitəsi ilə əlaqə qurmaq daha asandır. Hər bir dokumentin məlumatlarını düzgün yazmaq vacibdir.',
+      'Maliyyə çatışmazlığı məsələsi çox böyük problem ola bilər. Bir uşaq üçün aylıq 394 euro, çox hallarda block hesab və sponsor tələb olunur. Bir çox hallarda ciddi sənədləşmə və əlavə maliyyə göstəricisi tələb olunur.',
+      'Bizdə proses çox uzandı və sonradan vacib çatışmayan sənədləri əlavə etdik. Nəhayət 27.01.2025 tarixində uşaqların pasportu və sığortası təqdim edildi və viza verildi.',
+      'Qeyd: Ailə birləşməsinə Səfirlik, legalizasiya prosesinə Konsulluq baxır. Termin götürərkən bütün tələbləri diqqətlə oxuyun.'
+    ]
+  },
+  textbank: {
+    title: 'Almaniyada banklara qeydiyyat',
+    paragraphs: [
+      'Almaniyaya yeni gedənlər üçün daha əlçatan, rahat qeydiyyat oluna biləcək banklar və pul köçürmə sistemləri mövcuddur.',
+      'Revolut bank online banking xidməti ilə rahat şəkildə işləmək olar. Commerzbank da online hesab açma imkanı verir, lakin bankda sənədləri təqdim etməklə.',
+      'Pul köçürmə üçün ən sərfəli sistemlərdən biri KoronaPay-dir. Almaniyaya gələnlər üçün digər variantlar da olur, lakin əsasən daha ucuz və asan olan seçimlərə üstünlük verilir.',
+      'Hər yeni gələn üçün bank seçimləri və hesab açma prosesini əvvəlcədən araşdırmaq çox faydalıdır.'
+    ]
+  },
+  kitaundschule: {
+    title: 'Uşaqların məktəbə və bağçaya qeydiyyatı',
+    paragraphs: [
+      'Salam hörmətli oxuyucular. Bu gün sizə uşaqlarınızı Almaniyaya gətirdikdən sonrakı bəzi proseslər haqqında məlumatlandırmaq istəyirəm.',
+      'Qeyd: Keçdiyimiz proseslər Berlin üçün daha dəqiqdir. Başqa əyalətlərdə fərqli tələblər ola bilər.',
+      'İlk öncə uşaqlar gəldikdən sonra yaşayış yerinə və icbari sığortaya qeydiyyat edilir. Bir həftə ərzində vergi identifikasiya nömrəsi gəlib çatır.',
+      'Sonra bağça və məktəb qeydiyyatı üçün lazımi orqanlara müraciət edilir. Bağçalar hər biri ödənişlidir. 3-6 yaş aralığında qeydiyyatdan keçib çek əldə etmək mümkündür.',
+      'Bağçalar lazım olan sənədlərin siyahısını verir. Beləliklə bağça məsələsi həll olur. Bu proses tezliklə aparılır. Təəssüf ki, Almaniyada sənədləşmə prosesi çox vaxt aparır.',
+      'Məktəbə qeydiyyat isə ilk öncə rayon üzrə qeydiyyat şöbəsində olur. Pasportlar ilə oraya yaxınlaşırsınız. Uşaq qeydiyyata alınır və sonra rayonun Rathausuna göndərilir. Bir neçə həftə sonra ən yaxın məktəbə göndəriş vərəqi gelir.',
+      'Bir neçə həftədən sonra uşaq dərslərə başlayır. Bu prosesdə 1 aya qədər vaxt lazım ola bilər.',
+      'Ümid edirəm ki, bu yazımda kiminsə köməyi olacaq. Uğurlar hər birinizə.'
+    ]
+  },
+  mietevohnung: {
+    title: 'Almaniyada kirayə ev tapmaq problemi',
+    paragraphs: [
+      'Bildiyiniz kimi Almaniya sosial dövlətə malikdir. Burada aşağı gəlirli ailələr üçün bir çox yardım formaları var. Amma bütün sənədlər qaydasında olmalıdır.',
+      'Yeni gələnlər üçün ən böyük problem kirayə mənzil tapmaqdır. Almaniyada kirayə mənzil tapmaq çox çətindir. Bunun bəzi səbəbləri var.',
+      'Təhsil yolu ilə gəldikdə, sənədləriniz qaydasında olana kimi şirkətlərdən mənzil kirayələmək demək olar mümkün deyil. Həmçinin gəlirləriniz aşağı olduğu üçün şirkətlər və fiziki şəxslər sizə ev vermək istəmir. Çox hallarda yalnız ikinci kirayəçi kimi tapa bilərsiniz.',
+      'Mən özüm Facebook qruplarından birində uyğun variant tapdım. Gəldim onlarla qaldım. 2 otaqlı evdə 8 nəfər qalırdıq. Aylığı 350 euro hesablanırdı. Bu arada bir çox hallarda ikinci kirayəçi sistemi işlədir.',
+      'İş vizasına gələndə işiniz asanlaşır. Gəliriniz yaxşı olduqda fiziki şəxslərdən ev tapmaq daha asan olur. Amma yəqin ki, minimum 3 aylıq maaş sənədi tələb olunur.',
+      'Bir çox hallarda ikincil kirayəçi sistemində qarışdırıcılar olur. Bəzən ev üçün “hava parası” da tələb olunur. Bu birdəfəlik ödənişdir və geri qaytarılmır.',
+      'Ən vacib məqam: kirayə götürərkən əsas kirayəçi müqaviləsini tələb etməkdir. Çünki bəzən ikinci kirayəçi sizə 3-cü kirayəçi kimi müqavilə bağlayıb depositi götürüb aradan çıxa bilər.',
+      'Berlində kirayə mənzil tapmaq çox çətindir. Şirkətlərdə seçimdə random sistem işləyir. Bu seçimlərdə müəyyən kriteriyalara cavab verməlisiniz ki, siyahıya düşəsiniz.',
+      'Tələbələr üçün kampalar və digər yerli yardım sistemləri də mövcuddur. Peşə təhsili ilə gələnlər isə müəyyən üstünlüklərə malik olurlar.'
+    ]
+  }
+};
+
+const repoBase = (typeof window !== 'undefined' && window.location.pathname.startsWith('/ausbildungaserbaycan')) ? '/ausbildungaserbaycan' : '';
+const withBase = (path) => {
+  if (!path || !path.startsWith('/')) return path;
+  return repoBase ? `${repoBase}${path}` : path;
+};
+const withoutBase = (path) => {
+  if (!repoBase) return path;
+  return path.startsWith(repoBase) ? path.slice(repoBase.length) || '/' : path;
+};
+const resolveAsset = (path) => withBase(path);
+
 function Link({ href, children, className = '' }) {
   const navigate = (event) => {
     if (href.startsWith('/')) {
       event.preventDefault();
-      window.history.pushState({}, '', href);
+      const target = withBase(href);
+      window.history.pushState({}, '', target);
       window.dispatchEvent(new PopStateEvent('popstate'));
     }
   };
-  return <a className={className} href={href} onClick={navigate}>{children}</a>;
+  return <a className={className} href={withBase(href)} onClick={navigate}>{children}</a>;
 }
 
 function Layout({ children }) {
   return <div className="mx-auto max-w-5xl px-4 text-stone-800">
     <header className="my-6 flex justify-center rounded-xl bg-gradient-to-r from-stone-950 via-red-400 to-yellow-300 p-4 shadow-lg">
-      <Link href="/"><img width="300" src="/photos/Başlıksız-1 (2).png" alt="Yolumuz Almaniyaya" /></Link>
+      <Link href="/"><img width="300" src={resolveAsset('/photos/Başlıksız-1 (2).png')} alt="Yolumuz Almaniyaya" /></Link>
     </header>
-    <div className="h-48 overflow-hidden rounded-xl shadow-lg sm:h-72"><img className="h-full w-full object-cover" src="/photos/berlin.png" alt="Berlin" /></div>
+    <div className="h-48 overflow-hidden rounded-xl shadow-lg sm:h-72"><img className="h-full w-full object-cover" src={resolveAsset('/photos/berlin.png')} alt="Berlin" /></div>
     <nav><ul className="flex flex-wrap justify-center gap-2 py-5 sm:gap-4">{navItems.map(([href, label]) => <li key={href}><Link className="inline-block rounded-lg bg-red-500 px-3 py-2 text-sm font-semibold text-white shadow transition hover:bg-red-700 sm:px-5" href={href}>{label}</Link></li>)}</ul></nav>
     <main className="min-h-80 space-y-4 px-2 py-5 leading-relaxed">{children}</main>
     <footer className="mt-5 rounded-xl bg-gradient-to-r from-stone-950 via-red-400 to-yellow-300 p-4 text-center text-white"><hr className="mb-3 border-white/50" /><p>© 2025-2026 Almaniya, Berlin, Kərimli Ağabala</p></footer>
@@ -319,7 +385,15 @@ function Detail({ type, slug }) {
   const title = items.find(([, href]) => href.endsWith(normalizedSlug) || href.endsWith(normalizedSlug.replace(/\s+/g, '-')))?.[0] || 'Məlumat';
 
   if (type === 'blog') {
-    return <><h1 className="text-3xl font-bold">{title}</h1><p>Bu bölmədə Almaniyada yaşayış və gündəlik həyatla bağlı faydalı məlumatlar paylaşılır.</p></>;
+    const article = blogArticles[normalizedSlug] || blogArticles[slugKey] || null;
+    return <>
+      <h1 className="text-3xl font-bold">{article?.title || title}</h1>
+      <div className="space-y-4 rounded-xl border border-stone-200 bg-stone-50 p-4 shadow-sm">
+        {article?.paragraphs?.map((paragraph, index) => (
+          <p key={`${article.title}-${index}`} className="text-justify leading-7 text-stone-800">{paragraph}</p>
+        )) || <p>Bu bölmədə Almaniyada yaşayış və gündəlik həyatla bağlı faydalı məlumatlar paylaşılır.</p>}
+      </div>
+    </>;
   }
 
   const sections = interviewSections[slugKey] || interviewSections.vorstellug;
@@ -331,8 +405,8 @@ function Detail({ type, slug }) {
       {sections.map((section, sectionIndex) => (
         <div key={`${title}-${sectionIndex}`} className="rounded-xl border border-stone-200 bg-stone-50 p-4 shadow-sm">
           <h2 className="mb-3 text-xl font-semibold text-red-700">{section.title}</h2>
-          {section.audio && <audio className="mb-3 w-full max-w-lg" controls src={section.audio}>Audio dəstəklənmir.</audio>}
-          {section.answerAudio && <audio className="mb-3 w-full max-w-lg" controls src={section.answerAudio}>Cavab audio dəstəklənmir.</audio>}
+          {section.audio && <audio className="mb-3 w-full max-w-lg" controls src={resolveAsset(section.audio)}>Audio dəstəklənmir.</audio>}
+          {section.answerAudio && <audio className="mb-3 w-full max-w-lg" controls src={resolveAsset(section.answerAudio)}>Cavab audio dəstəklənmir.</audio>}
           <div className="space-y-3">
             {section.items.map((item, itemIndex) => (
               <div key={`${section.title}-${itemIndex}`} className="rounded-lg border border-stone-200 bg-white p-3">
@@ -350,8 +424,13 @@ function getInitialPath() {
   const params = new URLSearchParams(window.location.search);
   const routeFromQuery = params.get('route');
   if (routeFromQuery) {
-    const normalized = routeFromQuery.startsWith('/ausbildungaserbaycan') ? routeFromQuery.replace('/ausbildungaserbaycan', '') : routeFromQuery;
-    return normalized.replace(/\/$/, '') || '/';
+    const rawPath = decodeURIComponent(routeFromQuery);
+    const normalized = withoutBase(rawPath.startsWith('/ausbildungaserbaycan') ? rawPath.replace('/ausbildungaserbaycan', '') : rawPath);
+    const finalPath = normalized.replace(/\/$/, '') || '/';
+    const cleanUrl = new URL(window.location.href);
+    cleanUrl.searchParams.delete('route');
+    window.history.replaceState({}, '', cleanUrl.pathname + cleanUrl.search + cleanUrl.hash);
+    return finalPath;
   }
   const pathname = window.location.pathname;
   const withoutRepo = pathname.startsWith('/ausbildungaserbaycan') ? pathname.replace('/ausbildungaserbaycan', '') : pathname;
