@@ -289,51 +289,69 @@ const blogArticles = {
     title: 'Ailə birləşməsi',
     paragraphs: [
       'Salam hörmətli oxuyucular. Mən Kərimli Ağabala. İlk öncə Almaniya arzusunda olanların hər birinə Almaniyada yaşamağı arzu edirəm.',
-      'Bu hal yalnız ərin Almaniyada Ausbildung olduğu halda həyat yoldaşının Ausbildung yolu ilə gəlib uşaqlarını gətirməsi halına aiddir. Bir çox sənədləşmə işləri eynidir.',
-      'İlk öncə Nigah haqqında şəhadətnamə, uşaqların doğum haqqında şəhadətnamələrini 5 saylı ASAN xidmətdə andlı tərcümə etdirməlisiniz. Bu proses 20 gün müddətdə həll olur. Sənədləri ər və arvadın hər hansı biri təqdim edir.',
-      'Sənədləri daha sonra Xarici İşlər Nazirliyində təsdiq etdirmək lazımdır. Bunu validenlərdən biri 5 saylı ASAN xidmətdə təqdim edir. 1 həftədən sonra sənədlər hazır olur.',
-      'Sonra Konsulluğa təqdim etmək üçün rəsmi internet səhifəsindən görüş vaxtı götürürsünüz və sənədləri təqdim edirsiniz. Bu zaman hər sənədə 56 manat ödəniş edilir.',
-      'Ailə birləşməsi üçün müraciət etdikdən sonra səfirliyin elektron poçtuna məktub yazmaq, sənədlərin harada olduğunu öyrənmək faydalı olur. Müraciət etdikdən 1-2 gün sonra cavab gəlib, sənədlər miqrasiya idarəsinə göndərilmiş olur.',
-      'Əgər Berlinə gəlirsinizsə, miqrasiya idarəsinin mail vasitəsi ilə əlaqə qurmaq daha asandır. Hər bir dokumentin məlumatlarını düzgün yazmaq vacibdir.',
-      'Maliyyə çatışmazlığı məsələsi çox böyük problem ola bilər. Bir uşaq üçün aylıq 394 euro, çox hallarda block hesab və sponsor tələb olunur. Bir çox hallarda ciddi sənədləşmə və əlavə maliyyə göstəricisi tələb olunur.',
-      'Bizdə proses çox uzandı və sonradan vacib çatışmayan sənədləri əlavə etdik. Nəhayət 27.01.2025 tarixində uşaqların pasportu və sığortası təqdim edildi və viza verildi.',
-      'Qeyd: Ailə birləşməsinə Səfirlik, legalizasiya prosesinə Konsulluq baxır. Termin götürərkən bütün tələbləri diqqətlə oxuyun.'
+      'Şirkətlərin burdakı hər hansı məlumatlardan istifadə etməsinə halallıq verilmir.',
+      'Bu hal yalnız ərin Almaniyada Ausbildung olduğu halda həyat yoldaşının Ausbildung yolu ilə gəlib uşaqlarını gətirməsi halına aiddir və buna bənzər hallara. Bir çox sənədləşmə işləri eynidir.',
+      'Mən hazırda Berlində peşə təhsili alıram. Ausbildung. İşlədiyim yerdən həyat yoldaşımada müqavilə aldıq. Uşaqların sənədlərini hazırladıq. Oktyabrın 16-sı təqdim etdik, noyabrın sonu etiraz gəldi və dekabrın 16-sı yenidən sənədləri topladıq, etiraz etdik.',
+      'İlk öncə Nigah haqqında şəhadətnamə, uşaqların doğum haqqında şəhadətnamələrini 5 saylı ASAN xidmətdə andlı tərcümə etdirməlisiniz. Bizdə 2 uşaqdı. Bu proses 20 gün müddətdə həll olur. Rüsum təxminən 3 sənədə 170 manat idi. Sənədləri ər və arvadın hər hansı biri təqdim edir. 20 gündən sonra SMS gəlir sizə və sənədləri təqdim edənin şəxsiyyət vəsiqəsi ilə istənilən bir şəxs götürə bilər.',
+      'Sənədləri daha sonra Xarici İşlər Nazirliyində təsdiq etdirmək lazımdır. Bunun üçün valideynlərdən biri sənədləri 5 saylı ASAN xidmətdə Xarici İşlər Nazirliyinə təqdim edir. 3 sənədə 20 manata yaxın ödəniş etdik. Burda sənədlərin hazır olma müddəti 1 həftədir. 1 həftədən sonra sənədləri götürürsünüz.',
+      'Leqalizasiya mərhələsi. Sənədləri Konsulluğa təqdim etmək üçün konsulluğun rəsmi internet səhifəsindən görüş vaxtı götürürsünüz və hazır olan sənədləri aparırsınız, təqdim edirsiniz. Bu zaman hər sənədə 56 manat ödəyirsiniz. 1 həftədən sonra ordan sənədləri götürürsünüz.',
+      'Ailə birləşməsi üçün müraciət. Səfirliyin internet səhifəsindən görüş vaxtı təyin edirsiniz. Səfirliyin tələb etdiyi sənədləri toplayıb səfirliyə təqdim edirsiniz. Proses 2–3 aya qədər sürə bilir. Təbiiki, hər şey qaydasında olsa. Biz 16.10.2024 tarixində müraciət etdik.',
+      'Müraciət etdikdən ən azı 1–2 həftə sonra bu elektron poçt adresinə (zzVIZABVA@bva.bund.de) məktub yazın sənədlərinizin harda olması barədə. Sizə 1–2 günə cavab gələcək.',
+      'Əgər cavab gəlsə ki, artıq Miqrasiya idarəsinə (Ausländerbehörde) göndərilib, o zaman internetdə həmin ərazinin miqrasiya idarəsinin mail adresini tapıb yazın.',
+      'Hər iki halda məktub yazarkən uşaqların pasportunun nömrəsini, ad və soyadını, müraciət məktubunuzun nömrəsini qeyd edin ki, sizə daha tez cavab versinlər.',
+      'Əgər Berlinə gəlirsinizsə özünüzü yormayın. Miqrasiya idarəsinin rəsmi mail adresləri bağlanıb. Necə əlaqə qurmaq olar aşağıda izahı var.',
+      'Qeyd: Ailə birləşməsinə Səfirlik, legalizasiya prosesinə Konsulluq baxır. Termin götürərkən nəzərə alın.',
+      'Səfirliyin siyahısında olmayan, amma vacib olan və işinizi sürətləndirə biləcək bir neçə sənəd var. Bunlar: Almaniyadakı qalacağın evin müqaviləsi, Anmeldung sənədi (əgər ər və arvadın biri almaniyadadırsa, onların həmin evə qeydiyyat vərəqi), Block hesab, əgər varsa 3 aylıq maaş sənədi.',
+      'Bizdə 1 ay 15 gündən sonra maliyyə çatışmazlığından etiraz gəldi. Halbuki bunu bir çox Almaniyadakı miqrasiya işçisi mail ilə yazıb sizdən istəyə bilər. O, onun insafına qalmış. Maliyyə çatışmazlığı dedikdə hər uşağa görə aylıq 394 euro istəyirlər. Bunu şefiniz maaşınızı artıraraq da göstərə bilər, amma bir çox hallarda artirilmiş maaşı 3 ay almamısınızsa nəzərə alınmır. Block hesab qoyaraq da göstərə bilərsiniz. Expatrio və Fintiba online banking. Block hesab əyalətlərə və uşaq sayına görə, sizin maaşınıza görə dəyişə bilər. Bizdə əvvəl 4800 euro istədilər. Sonra əlavə yenidən istədilər. Orta hesabla 1 uşaq üçün 6000 nəzərinizdə tutun. Amma bəzən 1 uşaq olduqda, maaş və miniJob olduqda istənməyə bilər. Bəzi məmurlar blok hesabı da nəzərə almır və deyir ki, sponsor (qəyyum) tapın. Buda çətin məsələdir.',
+      'Qeyd: Expatrioda açdıq hesabı. ABB bank ilə app-dən hesab açıb pulu köçürdük o hesaba, ordandanda Expatrioya göndərdilər. Həmin anda oturur Expatrio hesabınıza. ABB bankda görsəniz bu işi və işçilər bilməsə, əgər Zərdab filialından deyin zəng edib öyrənsinlər. Bu funksiya yeni olduğu üçün normaldı bilməmələri.',
+      'Bizdə isə sonda öyrəndik ki, işimizə birbaşa Səfir baxıb və bütün qərarları özü verib. Berlində iki dəfə soyadı K hərfi ilə başlayan şəxslərin işinə baxan məmurlarda birini tapdım və yazdım iki dəfə. Hər ikisində cavabı o oldu ki, sizin işinizə Azərbaycan səfirliyi qərar verib.',
+      'Deməli maliyyə çatışmazlığını həll etdik və 15.12.2024 tarixində etiraz etdik. Bir neçə şəxslərlə məsləhətləşdik və etirazı gözləmədik. 16.01.2025-ci il tarixində yenidən 150 manat viza rüsumunu ödədik və tam sənədləri topladıq, müraciət etdik. 1 həftə keçdi, cavab gəldi ki, çatışmayan məbləğ var, onu tamamlayın, gəlin. Pasportları və sığortaları da gətirin. Uşaqların sığortası 90 günlük tələb olunur adətən. Atəşgah sığortada 95 manat etdim. Bir uşaq üçün.',
+      '27.01.2025-ci il tarixində uşaqların pasportunu və sığortasını təqdim etdik səfirliyə, 2 saat sonra viza verdilər.',
+      'Vacib qeyd: Miqrasiya idarələrində, məsələn K hərfi ilə başlayan soyadlara bir məmur baxır. Məmuru tapmaq üçün digər ailə birləşməsi edənlərdən məlumat toplamaq olar. Berlin üçün belədir.',
+      'Bu proses ərzində məlumat yetərsizliyindən çox əziyyət çəkdim. Azərbaycanlı ailələr və Türk ailələrdən topladım məlumatları. Nə öz Ausbildung qəbulumda, nə də bu məsələdə şirkətlərə müraciət etmədim. Çalışın araşdırın, özünüz bacaracaqsınız. Bu yazıda hətta Azərbaycanda bir çox şirkətlərin bilmədiyi məsələləri belə açıqlamışam. İnşallah xeyrini görün.',
+      'Şirkətlərlə iş görən ailələr də bu prosesin çətinliyini bilirlər. Bu səbəbdən düzgün planlama, sənədlərin vaxtında toplanması və müvafiq yazışmaların aparılması çox vacibdir.'
     ]
   },
   textbank: {
     title: 'Almaniyada banklara qeydiyyat',
     paragraphs: [
-      'Almaniyaya yeni gedənlər üçün daha əlçatan, rahat qeydiyyat oluna biləcək banklar və pul köçürmə sistemləri mövcuddur.',
-      'Revolut bank online banking xidməti ilə rahat şəkildə işləmək olar. Commerzbank da online hesab açma imkanı verir, lakin bankda sənədləri təqdim etməklə.',
-      'Pul köçürmə üçün ən sərfəli sistemlərdən biri KoronaPay-dir. Almaniyaya gələnlər üçün digər variantlar da olur, lakin əsasən daha ucuz və asan olan seçimlərə üstünlük verilir.',
-      'Hər yeni gələn üçün bank seçimləri və hesab açma prosesini əvvəlcədən araşdırmaq çox faydalıdır.'
+      'Almaniyaya yeni gedənlər üçün daha əlçatan, rahat qeydiyyat oluna biləcəyiniz banklar və pul köçürmə sistemləri.',
+      'Revolut bank (online banking) istifadə etmək çox rahatdır. Commerzbank da online hesab açma imkanı verir, lakin bankda sənədləri təqdim etməklə.',
+      'Ən sərfəli pul köçürmə sistemlərindən biri KoronaPay-dir. Bu cür sistemlər yeni gələnlərin pul köçürməsi və hesab açma prosesini sadələşdirir.',
+      'Hər yeni gələn üçün ən yaxşı seçimləri əvvəlcədən araşdırmaq faydalıdır. Bankların sistemləri, ödəniş qaydaları və sənədlər fərqli ola bilər. Bu səbəbdən ən əlçatan variantı seçmək üçün bir neçə bankı müqayisə etmək məsləhətdir.',
+      'Bu yazıda sadəcə bank və pul köçürmə variantları deyil, həm də qeydiyyat prosesinin asanlaşması ilə bağlı fikirlər paylaşılır. Zamanı səmərəli istifadə etmək və düzgün bank seçimi qarşılaşdığınız bürokratik problemləri azaldır.'
     ]
   },
   kitaundschule: {
     title: 'Uşaqların məktəbə və bağçaya qeydiyyatı',
     paragraphs: [
-      'Salam hörmətli oxuyucular. Bu gün sizə uşaqlarınızı Almaniyaya gətirdikdən sonrakı bəzi proseslər haqqında məlumatlandırmaq istəyirəm.',
+      'Salam hörmətli oxuyucular. Bu gün sizə uşaqlarınızı Almaniyaya gətirdikdən sonrakı bəzi proseslər haqqında məlumatlandırmaq istəyirəm. Sizə yazacağım prosesləri öz övladlarımla keçmişəm.',
       'Qeyd: Keçdiyimiz proseslər Berlin üçün daha dəqiqdir. Başqa əyalətlərdə fərqli tələblər ola bilər.',
-      'İlk öncə uşaqlar gəldikdən sonra yaşayış yerinə və icbari sığortaya qeydiyyat edilir. Bir həftə ərzində vergi identifikasiya nömrəsi gəlib çatır.',
-      'Sonra bağça və məktəb qeydiyyatı üçün lazımi orqanlara müraciət edilir. Bağçalar hər biri ödənişlidir. 3-6 yaş aralığında qeydiyyatdan keçib çek əldə etmək mümkündür.',
-      'Bağçalar lazım olan sənədlərin siyahısını verir. Beləliklə bağça məsələsi həll olur. Bu proses tezliklə aparılır. Təəssüf ki, Almaniyada sənədləşmə prosesi çox vaxt aparır.',
-      'Məktəbə qeydiyyat isə ilk öncə rayon üzrə qeydiyyat şöbəsində olur. Pasportlar ilə oraya yaxınlaşırsınız. Uşaq qeydiyyata alınır və sonra rayonun Rathausuna göndərilir. Bir neçə həftə sonra ən yaxın məktəbə göndəriş vərəqi gelir.',
-      'Bir neçə həftədən sonra uşaq dərslərə başlayır. Bu prosesdə 1 aya qədər vaxt lazım ola bilər.',
-      'Ümid edirəm ki, bu yazımda kiminsə köməyi olacaq. Uğurlar hər birinizə.'
+      'İlk öncə uşaqlar gələn kimi yaşadığımız əraziyə və icbari sığortaya qeydiyyat etdik. 1 həftə ərzində vergi identifikasiya nömrəsini göndərdilər. Bundan sonra bağça və məktəb qeydiyyatı üçün lazımi orqanlara müraciətə başladıq.',
+      'Qeyd: Yaşayış qeydiyyatı olmadan bu proseslərə başlamaq olmur.',
+      'Bağçalar hər biri ödənişlidir. Amma 3–6 yaş aralığında qeydiyyatdan keçib çek alaraq 23 eurodan başlayan qiymətlərlə bağçalar tapmaq olur. Lazım olan sənədləri topladıq və cek (Gutschein) üçün müraciət etdik və 1 həftə ərzində göndərdilər. Daha sonra Berlin.de saytında yaşadığımız əraziyə yaxın və boş yer olan bağçaları tapıb müraciət etdik. Çek üçün yaşadığımız rayonun Rathaus-na müraciət etdik. Lazım olan sənədləri isə ChatGPT-dən soruşduq.',
+      'Qeyd: Azərbaycandan uşaqlarınızın peyvəndlərini həll edin, sənədi tərcümə və təsdiq etdirdin, gətirin özünüzlə. Burda ən aşağısı 15 euroya tərcümə edirlər, hər hansısa sənədin 1 səhifəsini ən azı.',
+      'Bağçalar özləri lazım olan sənədlərin siyahısını verir. Beləliklə bağça məsələsi həll oldu. Bu proses kaş bu məqaləni yazdığım vaxt qədər qısa vaxt aparardı. Təəssüf ki, Almaniyada sənədləşmə prosesi çox vaxt aparır. 1 ay vaxtımızı apardı bu sənədləşmə.',
+      'Məktəbə qeydiyyat isə ilk öncə rayon üzrə qeydiyyat şöbəsi olur, yaşadığınız əraziyə yaxın. Pasportlarınızla oraya yaxınlaşırsınız. Onlar uşağı qeydiyyata alır və Rathausa göndərir. 1–4 həftə ərzində sizə ən yaxın olan məktəbə göndəriş vərəqi verirlər. Onunla yaxınlaşıb məktəbə qeydiyyatdan keçirsiniz. Növbəti həftədən uşaq dərslərə başlayır. Bu prosesdə 1 aya qədər vaxt həll oldu.',
+      'Çox xırdalığı ilə yazmadım, çünki əyalətlərə görə fərqli olur tələblər.',
+      'Ümid edirəm ki, bu yazımda kimlərinsə köməyi olacaq. Uğurlar hər birinizə.',
+      'Kərimli Ağabala.'
     ]
   },
   mietevohnung: {
     title: 'Almaniyada kirayə ev tapmaq problemi',
     paragraphs: [
-      'Bildiyiniz kimi Almaniya sosial dövlətə malikdir. Burada aşağı gəlirli ailələr üçün bir çox yardım formaları var. Amma bütün sənədlər qaydasında olmalıdır.',
-      'Yeni gələnlər üçün ən böyük problem kirayə mənzil tapmaqdır. Almaniyada kirayə mənzil tapmaq çox çətindir. Bunun bəzi səbəbləri var.',
-      'Təhsil yolu ilə gəldikdə, sənədləriniz qaydasında olana kimi şirkətlərdən mənzil kirayələmək demək olar mümkün deyil. Həmçinin gəlirləriniz aşağı olduğu üçün şirkətlər və fiziki şəxslər sizə ev vermək istəmir. Çox hallarda yalnız ikinci kirayəçi kimi tapa bilərsiniz.',
-      'Mən özüm Facebook qruplarından birində uyğun variant tapdım. Gəldim onlarla qaldım. 2 otaqlı evdə 8 nəfər qalırdıq. Aylığı 350 euro hesablanırdı. Bu arada bir çox hallarda ikinci kirayəçi sistemi işlədir.',
-      'İş vizasına gələndə işiniz asanlaşır. Gəliriniz yaxşı olduqda fiziki şəxslərdən ev tapmaq daha asan olur. Amma yəqin ki, minimum 3 aylıq maaş sənədi tələb olunur.',
-      'Bir çox hallarda ikincil kirayəçi sistemində qarışdırıcılar olur. Bəzən ev üçün “hava parası” da tələb olunur. Bu birdəfəlik ödənişdir və geri qaytarılmır.',
-      'Ən vacib məqam: kirayə götürərkən əsas kirayəçi müqaviləsini tələb etməkdir. Çünki bəzən ikinci kirayəçi sizə 3-cü kirayəçi kimi müqavilə bağlayıb depositi götürüb aradan çıxa bilər.',
-      'Berlində kirayə mənzil tapmaq çox çətindir. Şirkətlərdə seçimdə random sistem işləyir. Bu seçimlərdə müəyyən kriteriyalara cavab verməlisiniz ki, siyahıya düşəsiniz.',
-      'Tələbələr üçün kampalar və digər yerli yardım sistemləri də mövcuddur. Peşə təhsili ilə gələnlər isə müəyyən üstünlüklərə malik olurlar.'
+      'Bildiyiniz kimi Almaniya sosial dövlətdir. Burda aşağı gəlirli ailələr, tələbələr üçün bir çox yardımlar var. Amma təbii ki, bunlar üçün bütün sənədləriniz qaydasında olmalıdır. Buda yeni gəldikdə bir neçə aya həll olan bir məsələdir.',
+      'Təbiiki, əyalətlərə görə fərqli ola bilər. Sadəcə Almaniyaya yeni gələnlər üçün də bir çox çətinliklər mövcuddur. Bunlardan ən birincisi kirayə mənzil problemidir.',
+      'Almaniyada kirayə mənzil tapmaq gəlmələr üçün çətindir. Bunun bir neçə səbəbi var.',
+      '1. Təhsil yolu ilə gəldikdə — Sənədləriniz qaydasında olana kimi şirkətlərdən mənzil kirayələmək demək olar mümkün deyil. Həmçinin gəlirlərinizdə aşağı olduğu üçün nə şirkətlər, nə də fiziki şəxslər sizə ev vermək istəmir. Yalnız ikinci kirayəçi kimi tapa bilirsiniz. Almaniyada bu işlərin başında kürtlər və türklər durur deyərdim. Dövlətdən ucuz kirayə mənzil götürüb ikinci kirayəçiyə daha baha qiymətə verirlər. Yeni gələn tələbə üçün yeganə çıxış yolu bu deyərdim.',
+      'Mən özüm Facebook qruplarının birindən kürtlərdən tapmışdım. Amma razılaşmadım. Bir azərbaycanlı tapdım qrupların birindən. Gəldim onlarla qaldım. 2 otaqlı evdə 8 nəfər qalırdıq. Aylığı 350 euro hesabladı. Bu arada kürtlər daha insaflı təklif etmişdi. Qiymət Berlinə aiddir.',
+      'Tələbələr üçün kamplar vardır, onlarda baha və imkanı olanlar ordan da ev kirayələyə bilirlər. Peşə təhsili ilə gələnlər isə bir az üstünlükləri var. Otrum aldıqdan sonra dövlətin yardım alabilir və onlar vasitəsi ilə kaplarda qala və cüzi miqdarda kirayə ödəyə bilirlər.',
+      '2. İş vizası ilə gəldikdə işiniz bir az asanlaşır. Gəliriniz yaxşı olduğuna fiziki şəxlərdən ilk öncə ev tapmaq asan olur. Amma yenə də bir çoxları ən azı 3 aylıq maaş sənədi tələb edir.',
+      'Berlində kirayə mənzil tapmaq çox çətindir. Şirkətlərdə seçimi qanunlarla tənzimləyirlər. Demək olar hamısında təsadüfi seçimlə olur. Bu seçimdə düşmək üçün müəyyən kriteriyalara cavab verməlisən ki, seçim olacaq siyahıya düşəsən.',
+      'Şirkətlərə görə ortalama seçim prosesi bir neçə mərhələli olur. Belə çox tələbı görən, izləyən bir neçə növ fırıldaqçılar da iş başındadır. Ona görə kirayə mənzil götürərkən mütləq əsas kirayəçi müqavilələrini tələb edin. Çünki bəzən ikinci kirayəçi sizə 3-cü kirayəçi kimi müqavilə bağlayıb depozitdə götürüb aradan çıxa bilər və polislə belə heç nə edə bilməyəcəksiniz.',
+      'Ən məşhuru isə kürtlərin, türklərin makler sistemidir. İki formada olur. Əvvəlcə yazdığım kimi ucuz götürüb baha kirayə vermək. Birdəki bunları “hava parası” tələbidir. Ucuz götürürlər evi ucuzda verirlər. Amma səndən “hava parası” alırlar. Buda 3–4 min eurodan 15 min euroya qədər dəyişir. Birdəfəlik ödənişdir və geri ödənilmir.',
+      'Kərimli Ağabala.'
     ]
   }
 };
