@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      (() => {
+        const currentPath = window.location.pathname + window.location.search + window.location.hash;
+        const repoPrefix = '/ausbildungaserbaycan';
+        const normalized = currentPath.startsWith(repoPrefix) ? currentPath.slice(repoPrefix.length) || '/' : currentPath;
+        const target = './index.html?route=' + encodeURIComponent(normalized);
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Yönləndirilir...</p>
+  </body>
+</html>

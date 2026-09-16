@@ -346,9 +346,25 @@ function Detail({ type, slug }) {
     </div>
   </>;
 }
+function getInitialPath() {
+  const params = new URLSearchParams(window.location.search);
+  const routeFromQuery = params.get('route');
+  if (routeFromQuery) {
+    const normalized = routeFromQuery.startsWith('/ausbildungaserbaycan') ? routeFromQuery.replace('/ausbildungaserbaycan', '') : routeFromQuery;
+    return normalized.replace(/\/$/, '') || '/';
+  }
+  const pathname = window.location.pathname;
+  const withoutRepo = pathname.startsWith('/ausbildungaserbaycan') ? pathname.replace('/ausbildungaserbaycan', '') : pathname;
+  return withoutRepo.replace(/\/$/, '') || '/';
+}
+
 function App() {
-  const [path, setPath] = useState(window.location.pathname.replace(/\/$/, '') || '/');
-  useEffect(() => { const update = () => setPath(window.location.pathname.replace(/\/$/, '') || '/'); window.addEventListener('popstate', update); return () => window.removeEventListener('popstate', update); }, []);
+  const [path, setPath] = useState(getInitialPath());
+  useEffect(() => {
+    const update = () => setPath(getInitialPath());
+    window.addEventListener('popstate', update);
+    return () => window.removeEventListener('popstate', update);
+  }, []);
   const page = path === '/' ? <Home /> : path === '/about' ? <About /> : path === '/blog' ? <Blog /> : path === '/destek' ? <Support /> : path === '/contact' ? <Contact /> : path === '/interviu' ? <><h1 className="text-3xl font-bold">Hazırlıq</h1><ButtonList items={interviewItems} /></> : path.startsWith('/blog/') ? <Detail type="blog" slug={path.split('/').pop()} /> : path.startsWith('/interv-vor/') ? <Detail type="interview" slug={path.split('/').pop()} /> : <Home />;
   return <Layout>{page}</Layout>;
 }
