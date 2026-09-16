@@ -4,11 +4,81 @@ import './index.css';
 
 const navItems = [['/', 'Ana səhifə'], ['/about', 'Haqqımızda'], ['/interviu', 'Hazırlıq'], ['/blog', 'Blog'], ['/destek', 'Dəstək'], ['/contact', 'Əlaqə']];
 const interviewItems = [
-  ['Koch üçün müsahibə', '/interv-vor/koch'], ['Vorstellung-1', '/interv-vor/vorstellug'],
-  ['Vorstellung-2', '/interv-vor/vorstellug-1'], ['Vorstellung-3', '/interv-vor/vorstellug-2'],
-  ['Vorstellung-4', '/interv-vor/vorstellug-3'], ['Vorstellung-5 (B1)', '/interv-vor/vorstellug-4'],
-  ['Vorstellung-6 (A2)', '/interv-vor/vorstellug-5'], ['Vorstellung-7 (B1)', '/interv-vor/vorstellug-6'], ['Vorstellung-8', '/interv-vor/vorstellug-7'],
+  ['Koch', '/interv-vor/koch'], ['Vorstellung 1', '/interv-vor/vorstellug'],
+  ['Vorstellung 2', '/interv-vor/vorstellug 1'], ['Vorstellung 3', '/interv-vor/vorstellug 2'],
+  ['Vorstellung 4', '/interv-vor/vorstellug 3'], ['Vorstellung 5 (B1)', '/interv-vor/vorstellug 4'],
+  ['Vorstellung 6 (A2)', '/interv-vor/vorstellug 5'], ['Vorstellung 7 (B1)', '/interv-vor/vorstellug 6'], ['Vorstellung 8', '/interv-vor/vorstellug 7'],
 ];
+
+const audioSources = {
+  koch: [
+    { label: 'Sual 1', src: '/koch/1.mp3' },
+    { label: 'Sual 2', src: '/koch/2.mp3' },
+    { label: 'Sual 3', src: '/koch/3.mp3' },
+    { label: 'Sual 4', src: '/koch/4.mp3' },
+    { label: 'Sual 5', src: '/koch/5.mp3' },
+    { label: 'Sual 6', src: '/koch/6.mp3' },
+    { label: 'Sual 7', src: '/koch/7.mp3' },
+    { label: 'Sual 8', src: '/koch/8.mp3' },
+    { label: 'Sual 9', src: '/koch/9.mp3' },
+    { label: 'Sual 10', src: '/koch/10.mp3' },
+    { label: 'Cavab 1', src: '/koch/antworte/1.mp3' },
+    { label: 'Cavab 2', src: '/koch/antworte/2.mp3' },
+    { label: 'Cavab 3', src: '/koch/antworte/3.mp3' },
+    { label: 'Cavab 5', src: '/koch/antworte/5.mp3' },
+    { label: 'Cavab 7', src: '/koch/antworte/7.mp3' },
+    { label: 'Cavab 8', src: '/koch/antworte/8.mp3' },
+    { label: 'Cavab 9', src: '/koch/antworte/9.mp3' },
+    { label: 'Cavab 10', src: '/koch/antworte/10.mp3' },
+  ],
+  vorstellug: [
+    { label: '1-10', src: '/interv-vor/vorstellug/1-10.mp3' },
+    { label: '1-13', src: '/interv-vor/vorstellug/1-13.mp3' },
+    { label: '1-14', src: '/interv-vor/vorstellug/1-14.mp3' },
+    { label: '1-15', src: '/interv-vor/vorstellug/1-15.mp3' },
+    { label: '1-25', src: '/interv-vor/vorstellug/1-25.mp3' },
+    { label: '1-30', src: '/interv-vor/vorstellug/1-30.mp3' },
+    { label: '1-33', src: '/interv-vor/vorstellug/1-33.mp3' },
+    { label: '2-11', src: '/interv-vor/vorstellug/2-11.mp3' },
+    { label: '4-11', src: '/interv-vor/vorstellug/4-11.mp3' },
+    { label: '16-30', src: '/interv-vor/vorstellug/16-30.mp3' },
+    { label: '34-49', src: '/interv-vor/vorstellug/34-49.mp3' },
+    { label: '50-66', src: '/interv-vor/vorstellug/50-66.mp3' },
+  ],
+  'vorstellug 1': [
+    { label: '1-10', src: '/interv-vor/vorstellug/1-10.mp3' },
+    { label: '1-13', src: '/interv-vor/vorstellug/1-13.mp3' },
+    { label: '1-14', src: '/interv-vor/vorstellug/1-14.mp3' },
+    { label: '1-15', src: '/interv-vor/vorstellug/1-15.mp3' },
+    { label: '1-25', src: '/interv-vor/vorstellug/1-25.mp3' },
+    { label: '1-30', src: '/interv-vor/vorstellug/1-30.mp3' },
+    { label: '1-33', src: '/interv-vor/vorstellug/1-33.mp3' },
+  ],
+  'vorstellug 2': [
+    { label: '16-30', src: '/interv-vor/vorstellug/16-30.mp3' },
+    { label: '2-11', src: '/interv-vor/vorstellug/2-11.mp3' },
+  ],
+  'vorstellug 3': [
+    { label: '34-49', src: '/interv-vor/vorstellug/34-49.mp3' },
+    { label: '4-11', src: '/interv-vor/vorstellug/4-11.mp3' },
+  ],
+  'vorstellug 4': [
+    { label: '50-66', src: '/interv-vor/vorstellug/50-66.mp3' },
+    { label: '1-33', src: '/interv-vor/vorstellug/1-33.mp3' },
+  ],
+  'vorstellug 5': [
+    { label: '1-10', src: '/interv-vor/vorstellug/1-10.mp3' },
+    { label: '1-13', src: '/interv-vor/vorstellug/1-13.mp3' },
+  ],
+  'vorstellug 6': [
+    { label: '1-15', src: '/interv-vor/vorstellug/1-15.mp3' },
+    { label: '16-30', src: '/interv-vor/vorstellug/16-30.mp3' },
+  ],
+  'vorstellug 7': [
+    { label: '34-49', src: '/interv-vor/vorstellug/34-49.mp3' },
+    { label: '50-66', src: '/interv-vor/vorstellug/50-66.mp3' },
+  ],
+};
 const blogItems = [['Ailə birləşməsi', '/blog/textaile'], ['Almaniyada banklara qeydiyyat', '/blog/textbank'], ['Uşaqların məktəbə və bağçaya qeydiyyatı', '/blog/kitaundschule'], ['Almaniyada kirayə ev tapmaq problemi (YENİ)', '/blog/mietevohnung']];
 
 function Link({ href, children, className = '' }) {
@@ -41,8 +111,27 @@ function Support() { return <><h1 className="text-3xl font-bold">Dəstək</h1><p
 function Contact() { return <><h1 className="text-3xl font-bold">Əlaqə</h1><p>E-poçt: <a className="text-red-700 underline" href="mailto:aghabalakerimli@gmail.com">aghabalakerimli@gmail.com</a></p></>; }
 function Detail({ type, slug }) {
   const items = type === 'blog' ? blogItems : interviewItems;
-  const title = items.find(([, href]) => href.endsWith(slug))?.[0];
-  return <><h1 className="text-3xl font-bold">{title || 'Məlumat'}</h1>{type === 'blog' ? <p>Bu bölmədə Almaniyada yaşayış və gündəlik həyatla bağlı faydalı məlumatlar paylaşılır.</p> : <><p>Müsahibəyə hazırlıq üçün nümunə suallar və cavablar.</p><audio className="w-full max-w-lg" controls src={slug === 'koch' ? '/koch/1.mp3' : '/interv-vor/vorstellug/1-10.mp3'}>Audio dəstəklənmir.</audio></>}</>;
+  const normalizedSlug = decodeURIComponent(slug || '').trim();
+  const title = items.find(([, href]) => href.endsWith(normalizedSlug) || href.endsWith(normalizedSlug.replace(/\s+/g, '-')))?.[0] || 'Məlumat';
+
+  if (type === 'blog') {
+    return <><h1 className="text-3xl font-bold">{title}</h1><p>Bu bölmədə Almaniyada yaşayış və gündəlik həyatla bağlı faydalı məlumatlar paylaşılır.</p></>;
+  }
+
+  const sources = audioSources[normalizedSlug] || audioSources[normalizedSlug.replace(/\s+/g, '-')] || audioSources.vorstellug;
+
+  return <>
+    <h1 className="text-3xl font-bold">{title}</h1>
+    <p>Müsahibəyə hazırlıq üçün nümunə suallar və cavablar.</p>
+    <div className="space-y-4">
+      {sources.map(({ label, src }) => (
+        <div key={`${title}-${label}`} className="rounded-lg border border-stone-200 bg-stone-50 p-3">
+          <p className="mb-2 font-semibold text-stone-700">{label}</p>
+          <audio className="w-full max-w-lg" controls src={src}>Audio dəstəklənmir.</audio>
+        </div>
+      ))}
+    </div>
+  </>;
 }
 function App() {
   const [path, setPath] = useState(window.location.pathname.replace(/\/$/, '') || '/');
